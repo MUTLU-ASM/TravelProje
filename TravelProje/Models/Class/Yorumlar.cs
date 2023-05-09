@@ -13,6 +13,6 @@ namespace TravelProje.Models.Class
         public string Ad { get; set; }
         public string Mail { get; set; }
         public string Yorum { get; set; }
-        public int BlogId { get; set; }
+        public Blog Blog { get; set; }
     }
 }
