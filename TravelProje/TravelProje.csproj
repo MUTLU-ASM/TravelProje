@@ -126,6 +126,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -135,6 +137,7 @@
     <Compile Include="Models\Class\Admin.cs" />
     <Compile Include="Models\Class\Adress.cs" />
     <Compile Include="Models\Class\Blog.cs" />
+    <Compile Include="Models\Class\BlogYorum.cs" />
     <Compile Include="Models\Class\Contact.cs" />
     <Compile Include="Models\Class\Home.cs" />
     <Compile Include="Models\Class\TravelContext.cs" />
@@ -142,6 +145,25 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="webBlog\about.html" />
+    <Content Include="webBlog\contact.html" />
+    <Content Include="webBlog\css\bootstrap.css" />
+    <Content Include="webBlog\css\style.css" />
+    <Content Include="webBlog\images\avatar.png" />
+    <Content Include="webBlog\images\icon3.png" />
+    <Content Include="webBlog\images\logo.jpg" />
+    <Content Include="webBlog\images\man.jpg" />
+    <Content Include="webBlog\images\more.png" />
+    <Content Include="webBlog\images\post1.jpg" />
+    <Content Include="webBlog\images\post2.jpg" />
+    <Content Include="webBlog\images\post3.jpg" />
+    <Content Include="webBlog\images\search.png" />
+    <Content Include="webBlog\index.html" />
+    <Content Include="webBlog\js\easing.js" />
+    <Content Include="webBlog\js\jquery.min.js" />
+    <Content Include="webBlog\js\move-top.js" />
+    <Content Include="webBlog\single.html" />
+    <Content Include="webBlog\w3layouts-License.txt" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -214,6 +236,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutTravel.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Blog\BlogDetay.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

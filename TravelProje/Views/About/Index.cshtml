@@ -1,7 +1,7 @@
 ﻿@using TravelProje.Models.Class
 @model List<About>
 @{
-    ViewBag.Title = "About";
+    ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutTravel.cshtml";
 }
 
@@ -9,13 +9,14 @@
     <div class="wrap">
         <div class="about">
             <h3>Hakkımızda</h3>
+
             @foreach (var m in Model)
             {
-                <img src="@m.FotoUrl" alt=""/>
+                <img src="@m.FotoUrl" alt="" />
                 <p>@m.Aciklama</p>
             }
+
         </div>
     </div>
 </div>
-
 
