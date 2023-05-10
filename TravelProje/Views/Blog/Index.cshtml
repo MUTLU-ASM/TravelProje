@@ -1,5 +1,4 @@
-﻿@using TravelProje.Models.Class
-@model List<Blog>
+﻿@model TravelProje.Models.Class.BlogYorum
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutTravel.cshtml";
@@ -32,36 +31,36 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="container">
             <div class="col-md-8 single-main">
                 <div class="single-grid">
-                    @foreach (var m in Model)
+                    @foreach (var m in Model.Deger1)
                     {
                         <img src="@m.BlogImage" alt="" /><br /><br />
                         <a href="/Blog/BlogDetay/@m.Id">@m.Baslik</a>
                         <p>
-                            @m.Aciklama 
+                            @m.Aciklama
                         </p>
                     }
 
                 </div>
-                
+
                 @*<div class="single-grid">
-                    <img src="~/webBlog/images/post1.jpg" alt="" />
-                    <br /><br />
-                    <a href="#">Lyon da gezi</a>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    </p>
-                </div>*@
+                        <img src="~/webBlog/images/post1.jpg" alt="" />
+                        <br /><br />
+                        <a href="#">Lyon da gezi</a>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                    </div>*@
             </div>
 
             <div class="col-md-4 side-content">
                 <div class="recent">
                     <h3>Son Bloglar</h3>
-                    <ul>
-                        <li><a href="#">Aliquam tincidunt mauris</a></li>
-                        <li><a href="#">Vestibulum auctor dapibus  lipsum</a></li>
-                        <li><a href="#">Nunc dignissim risus consecu</a></li>
-                        <li><a href="#">Cras ornare tristiqu</a></li>
-                    </ul>
+                    @foreach (var m in Model.Deger3)
+                    {
+                        <ul>
+                            <li><a href="/Blog/BlogDetay/@m.Id">@m.Baslik</a></li>
+                        </ul>
+                    }
                 </div>
                 <div class="comments">
                     <h3>Son Yorumlar</h3>
