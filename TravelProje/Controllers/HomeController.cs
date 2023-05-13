@@ -35,7 +35,7 @@ namespace TravelProje.Controllers
         }    
         public PartialViewResult Partial3()
         {
-            var degerler = db.Blogs.ToList();
+            var degerler = db.Blogs.Take(5).ToList();
             return PartialView(degerler);
         }     
         public PartialViewResult Partial4()
