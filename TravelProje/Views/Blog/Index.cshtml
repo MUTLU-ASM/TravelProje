@@ -34,22 +34,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     @foreach (var m in Model.Deger1)
                     {
                         <img src="@m.BlogImage" alt="" /><br /><br />
-                        <a href="/Blog/BlogDetay/@m.Id">@m.Baslik</a>
+                        <a href="/Blog/BlogDetay/@m.Id">>> @m.Baslik</a>
                         <p>
-                            @m.Aciklama
+                            @m.Aciklama.Substring(0, m.Aciklama.Substring(0, 150).LastIndexOf(" ")) ...
                         </p>
                     }
 
                 </div>
-
-                @*<div class="single-grid">
-                        <img src="~/webBlog/images/post1.jpg" alt="" />
-                        <br /><br />
-                        <a href="#">Lyon da gezi</a>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
-                    </div>*@
             </div>
 
             <div class="col-md-4 side-content">

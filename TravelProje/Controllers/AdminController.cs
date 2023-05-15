@@ -11,7 +11,7 @@ namespace TravelProje.Controllers
     {
         // GET: Admin
         TravelContext db = new TravelContext();
-
+        [Authorize]
         public ActionResult Index()
         {
             var degerler = db.Blogs.ToList();

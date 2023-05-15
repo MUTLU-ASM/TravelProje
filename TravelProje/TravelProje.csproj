@@ -129,6 +129,7 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\GirisController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -175,6 +176,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="webLogin\css\style.css" />
+    <Content Include="webLogin\images\b4.jpg" />
+    <Content Include="webLogin\index.html" />
+    <Content Include="webLogin\w3layouts-License.txt" />
     <Content Include="web\about.html" />
     <Content Include="web\contact.html" />
     <Content Include="web\css\slider.css" />
@@ -252,6 +257,9 @@
     <Content Include="Views\Blog\YorumYap.cshtml" />
     <Content Include="Views\Admin\YorumListesi.cshtml" />
     <Content Include="Views\Admin\YorumGetir.cshtml" />
+    <Content Include="webLogin\fonts\Asap-Regular.ttf" />
+    <Content Include="webLogin\fonts\Audiowide-Regular.ttf" />
+    <Content Include="Views\Giris\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
