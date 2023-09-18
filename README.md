@@ -1,6 +1,4 @@
 # Konusu
-# SinemaOtomasyonu
-Bu proje; Sinemalar tarafından kullanılması planlanan yazılım ihtiyacı doğrultusunda hazırlanmış olup, Müşterilerin kolaylıkla her işlemi  yapabildiği ve kendileri tarafından film, bilet, yiyecek, içecek işlemlerini ve üzerinde satın alabilecekleri bir yazılım.
 Seyahat blog temalı geliştirilmiş bir web sitesi.
 
 # Projenin Amacı
